@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Buddy.css"
 
 function Buddy(props) {
-  console.log(props)
-  const {name, age, image} = props;
+  const [showBirthday, setShowBirthday] = useState(true)
+  const {name, age, image, showBirthday} = props;
   return (
     <li className="birthday">
       <div className="user">
@@ -13,7 +13,7 @@ function Buddy(props) {
           <p className="user-age"> {age} years</p>
         </div>
       </div>
-      <button className="delete-btn"> X </button>
+      <button className="delete-btn" onClick={() => setShowBirthday(false)}> X </button>
     </li>
   )
 }

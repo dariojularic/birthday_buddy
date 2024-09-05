@@ -7,7 +7,7 @@ import birthdays from './data';
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [showBirthdays, setShowBirthdays] = useState(true);
 
   return (
     <div className="container">
@@ -15,11 +15,13 @@ function App() {
       <ul className="birthday-list">
         {birthdays.map(birthday =>  {
           return (
-            <Buddy key={birthday.id} {...birthday}/>
+            showBirthdays && <Buddy key={birthday.id} {...birthday}/>
           )
         })}
       </ul>
-      <button className="clear-all-btn"> Clear All </button>
+      <button className="clear-all-btn" onClick={() => setShowBirthdays(false)}>
+        Clear All
+      </button>
     </div>
   )
 }
