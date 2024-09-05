@@ -13,7 +13,7 @@ function Buddy(props) {
           <p className="user-age"> {age} years</p>
         </div>
       </div>
-      <button> Delete </button>
+      <button className="delete-btn"> X </button>
     </li>
   )
 }
