@@ -8,5 +8,10 @@
 .user-info {
   display: flex;
   justify-content: space-between;
+
+}
+
+.birthday {
+  display: flex;
   
 }
