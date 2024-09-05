@@ -10,14 +10,16 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="container">
       <h1> Birthdays Today </h1>
-      {birthdays.map(birthday =>  {
-        return (
-          <Buddy key={birthday.id} {...birthday}/>
-        )
-      })}
-    </>
+      <ul className="birthday-list">
+        {birthdays.map(birthday =>  {
+          return (
+            <Buddy key={birthday.id} {...birthday}/>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 

@@ -8,10 +8,23 @@
 .user-info {
   display: flex;
   justify-content: space-between;
-
+  flex-direction: column;
 }
 
 .birthday {
   display: flex;
-  
+  justify-content: space-around;
+  margin-bottom: 8px;
+  height: fit-content;
+  width: 95%;
+}
+
+.user {
+  display: flex;
+
+}
+
+.birthday-list {
+  padding: 0;
+  width: 100%;
 }
