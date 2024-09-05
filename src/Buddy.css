@@ -4,3 +4,9 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  
+}
