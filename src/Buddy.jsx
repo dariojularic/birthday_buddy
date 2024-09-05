@@ -12,7 +12,6 @@ function Buddy(props) {
           <h3 className="user-name"> {name} </h3>
           <p className="user-age"> {age} years</p>
         </div>
-
       </div>
       <button> Delete </button>
     </li>

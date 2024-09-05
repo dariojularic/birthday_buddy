@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1> Birthdays Today </h1>
+      <h1> {birthdays.length} Birthdays Today </h1>
       <ul className="birthday-list">
         {birthdays.map(birthday =>  {
           return (
@@ -19,6 +19,7 @@ function App() {
           )
         })}
       </ul>
+      <button className="clear-all-btn"> Clear All </button>
     </div>
   )
 }

@@ -7,14 +7,14 @@
 
 .user-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 
 .birthday {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  margin-bottom: 24px;
   height: fit-content;
   width: 95%;
 }
@@ -27,4 +27,13 @@
 .birthday-list {
   padding: 0;
   width: 100%;
+}
+
+h3 {
+  margin: 8px;
+}
+
+p {
+  margin: 8px;
+  color: gray;
 }

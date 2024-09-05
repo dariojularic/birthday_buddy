@@ -18,3 +18,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.clear-all-btn {
+  width: 100%;
+  background-color: rgb(233, 105, 235);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 4px;
+}
