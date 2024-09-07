@@ -5,7 +5,6 @@ const birthdays = [
     age: 29,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
-    showBirthday: true
   },
   {
     id: 2,
@@ -13,7 +12,6 @@ const birthdays = [
     age: 32,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg',
-    showBirthday: true
   },
   {
     id: 3,
@@ -21,7 +19,6 @@ const birthdays = [
     age: 36,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-    showBirthday: true
   },
   {
     id: 4,
@@ -29,7 +26,6 @@ const birthdays = [
     age: 34,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-    showBirthday: true
   },
   {
     id: 5,
@@ -37,7 +33,6 @@ const birthdays = [
     age: 29,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    showBirthday: true
   },
 ];
 

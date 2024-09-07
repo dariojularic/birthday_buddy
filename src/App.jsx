@@ -3,11 +3,21 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Buddy from "./Buddy";
-import birthdays from './data';
+import data from './data';
 
 
 function App() {
-  const [showBirthdays, setShowBirthdays] = useState(true);
+  const [birthdays, setBirthdays] = useState(data)
+
+  function handleDeleteAll() {
+    const newArray = []
+    setBirthdays(newArray);
+  }
+
+  function handleDeleteBirthday(id) {
+    const newBirthdays = birthdays.filter(birthday => birthday.id !== id);
+    setBirthdays(newBirthdays);
+  }
 
   return (
     <div className="container">
@@ -15,13 +25,11 @@ function App() {
       <ul className="birthday-list">
         {birthdays.map(birthday =>  {
           return (
-            showBirthdays && <Buddy key={birthday.id} {...birthday}/>
+            birthdays && <Buddy key={birthday.id} {...birthday} handleDeleteBirthday={handleDeleteBirthday}/>
           )
         })}
       </ul>
-      <button className="clear-all-btn" onClick={() => setShowBirthdays(false)}>
-        Clear All
-      </button>
+      <button className="clear-all-btn" onClick={handleDeleteAll}> Clear All </button>
     </div>
   )
 }
