@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Buddy.css"
 
 function Buddy(props) {
