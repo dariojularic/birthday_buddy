@@ -12,8 +12,6 @@ function App() {
   }
 
   function handleDeleteBirthday(id) {
-    // const newBirthdays = birthdays.filter(birthday => birthday.id !== id);
-    // setBirthdays(newBirthdays)
     setBirthdays(prev => prev.filter(birthday => birthday.id !== id));
   }
 
